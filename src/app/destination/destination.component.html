@@ -1,0 +1,11 @@
+<img class="card-img-top" src="{{ destination.mapUrl }}" alt="Card image cap" />
+<div class="card-body bg-light text-dark text-center">
+  <h5 class="card-title">
+    {{ destination.country }},{{ destination.location }}
+  </h5>
+  <p class="card-text">Temperature: {{ destination.temperature }} °C</p>  
+  <p class="card-text">
+    <button type="button" class="btn btn-outline-success" [routerLink]="['/details',destination.id]">more details</button>
+  </p>
+</div>
+<img class="mx-auto d-block" src="{{ destination.weatherUrl }}" alt="weather" />

@@ -1,0 +1,9 @@
+<div class="container bg-light">
+    <h1 class="text-success">{{destination.country}}, {{destination.location}}</h1>
+    <img src="{{destination.mapUrl}}" alt="">
+    <p>{{destination.description}}</p>
+    <p class="text-success">Temperature: {{destination.temperature}} °C <br><br>Longitude: {{destination.lon}} Latitude: {{destination.lat}}</p>
+    <p class="text-success">Weather: {{destination.weather}}</p>
+    <button class="btn fas fa-trash-alt fa-3x" (click)="del()" routerLink="/destinations"></button>
+    <button class="btn fas fa-wrench fa-3x" [routerLink]="['/update',destination.id]"></button>
+</div>

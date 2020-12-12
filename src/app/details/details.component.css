@@ -1,0 +1,17 @@
+.container{
+    text-align: center;
+    border: solid black;
+    margin-top: 2rem;
+    width: 600px;
+}
+h1{
+    color: black;
+}
+p{
+    margin-top: 1rem;
+    color: black;
+}
+
+.btn{
+    margin:0 3rem;
+}
