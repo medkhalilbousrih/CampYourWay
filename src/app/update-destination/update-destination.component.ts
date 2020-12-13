@@ -61,7 +61,7 @@ export class UpdateDestinationComponent implements OnInit {
 
     this.ar.paramMap.subscribe((res) => {
       this.id = res.get('id');
-      this.ds.getLocation(this.id).subscribe((res) => (this.destination = res));
+      this.ds.getDestination(this.id).subscribe((res) => (this.destination = res));
     });
   }
 }

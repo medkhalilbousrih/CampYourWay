@@ -2,14 +2,14 @@
   "destinations": [
     {
       "country": "Tunisia",
-      "location": "Zaghouan",
-      "description": "Zaghwan is a town in the northern half of Tunisia. Situated on a low ridge of the Dorsale Mountains, the town has a mild climate and presents a green aspect. Cold water from here was taken by the Zaghouan Aqueduct to Carthage.\n",
-      "lon": "10.150",
-      "lat": "36.400",
-      "temperature": 12,
+      "location": "Bizerte",
+      "description": "bizerte is a town in the northern half of Tunisia. Situated on a low ridge of the Dorsale Mountains, the town has a mild climate and presents a green aspect. Cold water from here was taken by the Zaghouan Aqueduct to Carthage.\n",
+      "lon": "9.874",
+      "lat": "37.274",
+      "temperature": 14,
       "weatherUrl": "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png",
       "weather": "Partly cloudy",
-      "mapUrl": "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/10.150,36.400,9,0/300x200?access_token=pk.eyJ1Ijoia2hhbGlsbCIsImEiOiJja2lodXVwNHcxN281MnFxdTVzY2EydHMyIn0.1lOFJAVZVirlcsFEZFeMlQ",
+      "mapUrl": "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/9.874,37.274,9,0/300x200?access_token=pk.eyJ1Ijoia2hhbGlsbCIsImEiOiJja2lodXVwNHcxN281MnFxdTVzY2EydHMyIn0.1lOFJAVZVirlcsFEZFeMlQ",
       "id": 1
     }
   ],
