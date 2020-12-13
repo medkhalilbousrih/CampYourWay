@@ -18,13 +18,13 @@ export class DetailsComponent implements OnInit {
 
   del():void{
     if(window.confirm("Are you sure you want to delete this destination?")){
-      this.ds.delLocation(this.id).subscribe(res => console.log(res));
+      this.ds.delDestination(this.id).subscribe(res => console.log(res));
     }
   }
 
   ngOnInit(): void {
     this.ar.paramMap.subscribe(res => this.id = res.get('id'));
-    this.ds.getLocation(this.id).subscribe(res => this.destination = res);
+    this.ds.getDestination(this.id).subscribe(res => this.destination = res);
     console.log(this.destination)
   }
 

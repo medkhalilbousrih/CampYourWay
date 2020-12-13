@@ -12,23 +12,23 @@ export class DestinationService {
 
   constructor(private client: HttpClient) { }
 
-  getLocations():Observable<Destination[]>{
+  getDestinations():Observable<Destination[]>{
     return this.client.get<Destination[]>(this.baseURL);
   }
 
-  getLocation(id:string):Observable<Destination>{
+  getDestination(id:string):Observable<Destination>{
     return this.client.get<Destination>(this.baseURL + "/" + id);
   }
 
-  addLocation(dest: Destination):Observable<Destination>{
+  addDestination(dest: Destination):Observable<Destination>{
     return this.client.post<Destination>(this.baseURL,dest);
   }
 
-  delLocation(id: string):Observable<Destination>{
+  delDestination(id: string):Observable<Destination>{
     return this.client.delete<Destination>(this.baseURL + "/" + id);
   }
 
-  updateLocation(id: string,dest: Destination):Observable<Destination>{
+  updateDestination(id: string,dest: Destination):Observable<Destination>{
     return this.client.put<Destination>(this.baseURL + "/" + id,dest);
   }
   

@@ -17,7 +17,7 @@ export class DestinationsComponent implements OnInit {
   locationFilter:string;
   
   ngOnInit(): void {
-    this.ds.getLocations().subscribe(res => this.destinations = res);
+    this.ds.getDestinations().subscribe(res => this.destinations = res);
   }
 
 }

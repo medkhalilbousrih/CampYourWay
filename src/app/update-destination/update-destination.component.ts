@@ -27,7 +27,7 @@ export class UpdateDestinationComponent implements OnInit {
       this.destination.weather = res['current'].weather_descriptions[0];
       this.destination.mapUrl = `https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/${this.destination.lon},${this.destination.lat},9,0/300x200?access_token=pk.eyJ1Ijoia2hhbGlsbCIsImEiOiJja2lodXVwNHcxN281MnFxdTVzY2EydHMyIn0.1lOFJAVZVirlcsFEZFeMlQ`;
       this.ds
-        .updateLocation(this.id, this.destination)
+        .updateDestination(this.id, this.destination)
         .subscribe((res) => console.log(res));
       this.show = true;
       setTimeout(() => {
