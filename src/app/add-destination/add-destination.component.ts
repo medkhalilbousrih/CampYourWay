@@ -15,6 +15,8 @@ import { InformationService } from '../shared/information.service';
   styleUrls: ['./add-destination.component.css'],
 })
 export class AddDestinationComponent implements OnInit {
+  login = localStorage.getItem("login");
+
   destination: Destination = new Destination();
 
   destinationForm: FormGroup;

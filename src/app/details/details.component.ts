@@ -12,6 +12,8 @@ export class DetailsComponent implements OnInit {
   id:string;
   destination: Destination = new Destination();
 
+  login = localStorage.getItem("login");
+
   constructor(private ds: DestinationService, private ar: ActivatedRoute) { }
 
   del():void{

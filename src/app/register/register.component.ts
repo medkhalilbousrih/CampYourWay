@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
     this.show = true;
     setTimeout(()=>{ 
       this.show = false; 
-    }, 3000);
+    }, 2000);
   }
   
   constructor(private us: UserService) { }

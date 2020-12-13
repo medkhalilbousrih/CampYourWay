@@ -1,4 +1,10 @@
-<div class="container jumbotron">
+<div *ngIf="login == 'false' ">
+  <div class="jumbotron">
+      <p>Please  Login First</p>
+  </div>
+</div>
+
+<div *ngIf="login == 'true'" class="container jumbotron">
   <form [formGroup]="destinationForm">
     <div class="form-row">
       <div class="col-md-6 mb-3">

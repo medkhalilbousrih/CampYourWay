@@ -1,0 +1,42 @@
+<div *ngIf="login == 'true'">
+    <div class="jumbotron">
+        <p class="text-center"><button class="btn btn-danger" (click)="logoutfun()">Logout</button></p>
+    </div>
+</div>
+<div *ngIf="login == 'false'" class="container jumbotron">
+    <form #myForm="ngForm">
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" [(ngModel)]="em" #email="ngModel" name="email"
+                    required
+                    pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" />
+                <div *ngIf="email.touched && email.errors">
+                    <div class="alert alert-danger" *ngIf="email.errors.required">
+                        Please enter your email address.
+                    </div>
+                    <div class="alert alert-danger" *ngIf="email.errors.pattern">
+                        Invalid email address.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" [(ngModel)]="pwd" #password="ngModel"
+                    name="password" required minlength="6" />
+                <div *ngIf="password.touched && password.errors">
+                    <div class="alert alert-danger" *ngIf="password.errors.required">
+                        Please enter your a password.
+                    </div>
+                    <div class="alert alert-danger" *ngIf="password.errors.minlength">
+                        password needs to have at least 6 caracters
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="alert alert-danger" [hidden]="!show">Wrong email or password</div>
+    <button class="btn btn-success float-right" (click)="loginfun()" [disabled]="myForm.invalid">
+        Login
+    </button>
+</div>

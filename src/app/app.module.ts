@@ -12,6 +12,7 @@ import { AddDestinationComponent } from './add-destination/add-destination.compo
 import { DestinationComponent } from './destination/destination.component';
 import { DetailsComponent } from './details/details.component';
 import { UpdateDestinationComponent } from './update-destination/update-destination.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -24,7 +25,8 @@ import { UpdateDestinationComponent } from './update-destination/update-destinat
     AddDestinationComponent,
     DestinationComponent,
     DetailsComponent,
-    UpdateDestinationComponent
+    UpdateDestinationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

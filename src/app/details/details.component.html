@@ -1,4 +1,9 @@
-<div class="container bg-light">
+<div *ngIf="login == 'false' ">
+    <div class="jumbotron">
+        <p>Please  Login First</p>
+    </div>
+</div>
+<div *ngIf="login == 'true'" class="container bg-light">
     <h1 class="text-success">{{destination.country}}, {{destination.location}}</h1>
     <img src="{{destination.mapUrl}}" alt="">
     <p>{{destination.description}}</p>
